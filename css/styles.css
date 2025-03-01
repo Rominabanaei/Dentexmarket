@@ -265,14 +265,17 @@ main h2 {
 }
 
 .redes-sociales img {
-    width: 35px;
-    height: auto;
-    transition: transform 0.3s;
+    width: 20px;  /* تنظیم عرض یکسان */
+    height: 20px; /* تنظیم ارتفاع یکسان */
+    border-radius: 50%; /* گرد کردن آیکون‌ها */
+    object-fit: cover; /* اطمینان از تناسب تصویر */
+    transition: transform 0.3s ease-in-out;
 }
 
 .redes-sociales img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* افکت بزرگ شدن هنگام هاور */
 }
+
 
 
 /* تنظیمات کلی صفحه */
