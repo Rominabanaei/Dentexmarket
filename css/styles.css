@@ -593,78 +593,7 @@ main h2 {
 }
 /* ✅ واکنش‌گرایی برای موبایل و تبلت (ساده شدن نمایش سایت) */
 
-/* 📱 **برای تبلت‌ها (عرض کمتر از 992px)** */
-@media screen and (max-width: 992px) {
-    .main-content, .sidebar {
-        width: 100%; /* تنظیم پهنای محتوا برای پر کردن صفحه */
-        margin-top: 20px;
-    }
 
-    .galeria-container {
-        grid-template-columns: repeat(2, 1fr); /* تغییر نمایش گالری به دو ستون */
-    }
-}
-
-/* 📱 **برای موبایل‌ها (عرض کمتر از 768px)** */
-@media screen and (max-width: 768px) {
-    /* ✅ منو بدون تغییر در موبایل */
-    nav {
-        height: 75px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    /* ✅ ساده‌سازی گالری */
-    .galeria-container {
-        grid-template-columns: repeat(1, 1fr); /* یک ستون برای گالری */
-        max-width: 90%; /* گالری تمام صفحه نشود */
-        margin: auto;
-    }
-
-    .galeria-imagen {
-        height: auto;
-        max-height: 300px;
-    }
-
-    /* ✅ جلوگیری از نمایش نادرست در موبایل */
-    .sidebar {
-        width: 100%;
-        margin-top: 20px;
-        padding: 10px;
-        display: block;
-    }
-
-    /* ✅ تغییر اندازه‌ی فونت برای خوانایی بهتر */
-    body {
-        font-size: 14px;
-    }
-
-    main h1, main h2 {
-        font-size: 20px;
-    }
-
-    .contact-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    /* ✅ جلوگیری از اشغال بیش از حد فضای صفحه */
-    .footer-container {
-        padding: 10px;
-    }
-
-    .search-container {
-        width: 100%;
-        justify-content: center;
-    }
-}
 
 /* 📱 **برای موبایل‌های کوچک‌تر از 576px (ساده‌ترین نمایش)** */
 @media screen and (max-width: 576px) {
