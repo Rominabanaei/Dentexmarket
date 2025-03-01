@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "🦷 Innovaciones en Equipos Dentales",
+        "contenido": "Descubre las últimas tecnologías en herramientas odontológicas diseñadas para mejorar la eficiencia y precisión en los tratamientos. Mantente al día con las novedades del sector."
+    },
+    {
+        "titulo": "📝 Solicita tu Presupuesto Sin Compromiso",
+        "contenido": "Ahora puedes seleccionar tus instrumentos favoritos en nuestra galería y solicitar un presupuesto detallado sin compromiso. ¡Evalúa los costos y optimiza tu inversión!",
+        "link": "views/presupuesto.html"
+    },
+    {
+        "titulo": "🔬 Nueva Colección de Instrumentos",
+        "contenido": "Hemos actualizado nuestra selección con herramientas de última generación, incluyendo fresas de diamante y lámparas LED para tratamientos avanzados. Explora las opciones en nuestra galería.",
+        "link": "views/galeria.html"
+    },
+    {
+        "titulo": "📅 Capacitación y Tendencias en Odontología",
+        "contenido": "Te traemos información sobre cursos, talleres y eventos especializados en odontología. Aprende sobre las nuevas técnicas y materiales para optimizar tu práctica."
+    }
+]

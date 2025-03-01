@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentexMarkt</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <ul>
+                
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="views/galeria.html">Galería</a></li>
+                <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="views/contacto.html">Contacto</a></li>
+                <li class="search-container">
+                    <input type="text" id="search-box" placeholder="Buscar...">
+                    <button type="submit" id="search-btn">🔍</button>
+                </li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+   
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Siderbar (Noticias) -->
+        <aside class="sidebar">
+            <h2>📢 Últimas Noticias</h2>
+            <div id="contenedor-noticias"></div> <!-- Este contenedor se usará para cargar las noticias -->
+        </aside>
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <h1>🦷 Bienvenido a DentexMarkt - Especialistas en Instrumentos Odontológicos</h1>
+        
+            <p>En <strong>DentexMarkt</strong>, nos dedicamos a proporcionar <strong>instrumentos odontológicos de alta calidad</strong> para clínicas y profesionales del sector dental. Nuestro objetivo es facilitar el acceso a herramientas avanzadas, asegurando que cada especialista tenga los equipos adecuados para realizar su trabajo con la máxima precisión y eficacia.</p>
+        
+            <p>✔︎ <strong>Equipos de Calidad para Profesionales</strong><br>
+            Nuestra selección de productos abarca desde escaladores ultrasónicos para la eliminación de sarro hasta sistemas de aspiración de última generación. Todos los productos en nuestra plataforma han sido cuidadosamente seleccionados para garantizar su durabilidad, ergonomía y rendimiento en el entorno clínico.</p>
+        
+            <p>✔︎ <strong>Explora Nuestra Galería de Instrumentos</strong><br>
+            Accede a nuestra <a href="./views/galeria.html" class="galeria-link">galería</a> donde podrás encontrar una amplia variedad de herramientas dentales con sus especificaciones y características detalladas. Hemos diseñado esta sección para que los profesionales puedan evaluar los productos de manera clara y sencilla.</p>
+        
+            <p>✔︎ <strong>Presupuestos Personalizados para Cada Cliente</strong><br>
+            En <strong>DentexMarkt</strong>, entendemos que cada clínica y cada profesional tiene necesidades específicas. Por eso, ofrecemos un sistema de <a href="./views/presupuesto.html" class="galeria-link">presupuestos personalizados</a>, donde puedes seleccionar los productos que te interesan y recibir una cotización detallada sin compromiso.</p>
+        
+            <p>💡 <strong>¿Cómo Funciona?</strong><br>
+            1️⃣ Explora nuestra galería de productos y elige los equipos que mejor se adapten a tus necesidades.<br>
+            2️⃣ Agrega los productos a tu solicitud de presupuesto.<br>
+            3️⃣ Envía tu solicitud y recibe una cotización clara y transparente.<br>
+            4️⃣ Evalúa la oferta y realiza tu compra con la seguridad de contar con los mejores instrumentos.</p>
+        
+            <p>📢 <strong>Mantente Informado con las Últimas Novedades del Sector</strong><br>
+            Consulta nuestras <strong>últimas noticias</strong> en el sector odontológico, con información sobre innovaciones en materiales, nuevas tecnologías en equipamiento dental y mejores prácticas en la clínica. Nuestro objetivo es brindarte recursos valiosos para optimizar tu práctica profesional.</p>
+        
+            <p>📌 <strong>Por Qué Elegir DentexMarkt</strong><br>
+            ✔︎ Instrumentos seleccionados de fabricantes reconocidos.<br>
+            ✔︎ Proceso de solicitud de presupuesto fácil y rápido.<br>
+            ✔︎ Asesoramiento y soporte personalizado.<br>
+            ✔︎ Innovación y tecnología en cada producto.</p>
+        
+            <p>🔍 Explora nuestra <a href="./views/galeria.html" class="galeria-link">galería</a>, selecciona los productos que necesitas y recibe una cotización en pocos pasos. Tu consulta dental merece <span class="highlight">las mejores herramientas</span>.</p>
+        
+            <div class="card">
+                <h3>Instrumentos Dentales de Precisión</h3>
+                <p>Desde escaladores ultrasónicos hasta fresas de diamante, contamos con una selección exclusiva de instrumentos de calidad superior.</p>
+            </div>
+        
+            <div class="card">
+                <h3>Presupuestos a Medida</h3>
+                <p>Selecciona tus productos y solicita una cotización personalizada sin compromiso. Adaptamos nuestras soluciones a tus necesidades.</p>
+            </div>
+        
+            <div class="card">
+                <h3>Calidad y Tecnología</h3>
+                <p>Trabajamos con los mejores fabricantes para garantizar innovación, seguridad y confiabilidad en cada instrumento que ofrecemos.</p>
+            </div>
+        </main>
+        
+
+        
+
+    </div> <!-- Fin del contenedor principal -->
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="images/social_icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/social_icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/social_icons/instagram.png" alt="Instagram"></a>
+        </div>
+      
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

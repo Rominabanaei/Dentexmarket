@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentexMarkt</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+             <img src="../images/logo.png" alt="Logo" class="logo">
+            <ul>
+               
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="search-container">
+                    <input type="text" id="search-box" placeholder="Buscar...">
+                    <button type="submit" id="search-btn">🔍</button>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galería de Instrumentos</h1>
+
+        
+
+        <!-- Contenedor de productos -->
+        <section class="productos-container">
+            
+            <!-- 🔹 Producto 1 -->
+            <div class="producto">
+                <div class="galeria-mini">
+                    <img src="../images/escalador.jpg" alt="Escalador Dental" onclick="openLightbox(['../images/escalador.jpg'])">
+                </div>
+                <div class="info-producto">
+                    <h3>Escalador Dental Ultrasónico</h3>
+                    <p>Elimina sarro y placa de forma eficiente con vibraciones ultrasónicas.</p>
+                    <p class="precio">255 €</p>
+                    <button class="btn-comprar" onclick="agregarCarrito('Escalador Dental Ultrasónico', 255)">Agregar a presupuesto</button>
+                </div>
+            </div>
+
+            <!-- 🔹 Producto 2 -->
+            <div class="producto">
+                <div class="galeria-mini">
+                    <img src="../images/exploracion.jpg" alt="Kit Exploración" onclick="openLightbox(['../images/exploracion.jpg'])">
+                </div>
+                <div class="info-producto">
+                    <h3>Kit de Exploración Odontológica</h3>
+                    <p>Incluye espejo, sonda y pinza para exámenes precisos.</p>
+                    <p class="precio">30 €</p>
+                    <button class="btn-comprar" onclick="agregarCarrito('Kit de Exploración Odontológica', 30)">Agregar a presupuesto</button>
+                </div>
+            </div>
+
+            <!-- 🔹 Producto 3 -->
+            <div class="producto">
+                <div class="galeria-mini">
+                    <img src="../images/fresas.jpg" alt="Fresas Dentales" onclick="openLightbox(['../images/fresas.jpg'])">
+                </div>
+                <div class="info-producto">
+                    <h3>Fresas de Diamante</h3>
+                    <p> Instrumentos rotatorios con puntas de diamante diseñados para cortar y dar forma al esmalte dental durante procedimientos restaurativos.
+                        Contenido: 5 unidades.
+                    </p>
+                    <p class="precio">15 €</p>
+                    <button class="btn-comprar" onclick="agregarCarrito('Fresas de Diamante', 15)">Agregar a presupuesto</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="galeria-mini">
+                    <img src="../images/contraangulo.jpg" alt="contraangulo" onclick="openLightbox(['../images/contraangulo.jpg'])">
+                </div>
+                <div class="info-producto">
+                    <h3>X95L Ti Max: Contra Ángulo Dental 1:5 - NSK </h3>
+                    <p> Características de X95L Ti Max Contra Ángulo Dental 1:5:
+                        Contra ángulo multiplicador 1:5.
+                        Cuerpo de titanio con Duracoat®.
+                        Resistente a rayones.
+                        Óptica de vidrio celular.
+                        Rodamientos de cerámicas.
+                        Sistema de cabezal limpio.
+                        Portafresas ultra push.
+                        Spray Quattro.
+                        Con luz.
+                        Contenido: 1 unidad.
+                    </p>
+                    <p class="precio">885 €</p>
+                    <button class="btn-comprar" onclick="agregarCarrito('contraangulo', 885)">Agregar a presupuesto</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="galeria-mini">
+                    <img src="../images/lampara.jpg" alt="Lampara" onclick="openLightbox(['../images/lampara.jpg'])">
+                </div>
+                <div class="info-producto">
+                    <h3>Lámpara LED Light Curing - BADER</h3>
+                    <p> Este equipamiento tiene la capacidad de acelerar la reacción de los componentes de la resina y del material dental. Contiene la superficie de la resina y le da una rápida consistencia evitando que aparezcan las fracturas en la pieza dental.
+
+                    </p>
+                    <p class="precio">307 €</p>
+                    <button class="btn-comprar" onclick="agregarCarrito('lampara', 307)">Agregar a presupuesto</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="galeria-mini">
+                    <img src="../images/suction1.jpg" alt="Suction" onclick="openLightbox(['../images/suction1.jpg', '../images/suction2.jpg'])">
+                </div>
+                <div class="info-producto">
+                    <h3>Easy Suction: Sistema de Aspiración para Pared - BADER</h3>
+                    <p>Sistema de Aspiración para Pared Easy Suction :
+                        Características :
+                        Sistema de aspiración dental de una o dos mangueras de alta calidad.
+                        Flujo máximo de succión hasta con su uso con cánulas pequeñas.
+                        Acceso sencillo al filltro.
+                        Su cánula Airmatic permite una aspiración silenciosa, creando un mejor ambiente de trabajo.
+                        Longitud amplia de la manguera para una mejor movilidad.
+                        Instalación en pared, permitiendo un espacio de trabajo más despejado y amplio.
+                        Contenido: una unidad (en la opción de una manguera no incluye cánula).
+                    </p>
+                    <p class="precio">827 €</p>
+                    <button class="btn-comprar" onclick="agregarCarrito('suction', 827)">Agregar a presupuesto</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 🔹 Lightbox -->
+        <!-- 🔹 Lightbox (بدون خطا) -->
+<div id="lightbox" class="lightbox" style="display: none;">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-content" src="../images/default-placeholder.jpg" alt="Galería de imágenes">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+
+        <!-- Selección de productos (NO SE ELIMINA) -->
+        <div id="galeria-container" class="galeria-container">
+            <form id="galeria-form">
+                <label for="producto">Selecciona un producto:</label>
+                <select id="producto" required>
+                    <option value="" disabled selected>Selecciona un producto</option>
+                    <option value="producto1" data-precio="255" data-imagen="../images/escalador.jpg">Escalador de dientes - 255€</option>
+                    <option value="producto2" data-precio="30" data-imagen="../images/exploracion.jpg">Kit de Exploración - 30€</option>
+                    <option value="producto3" data-precio="15" data-imagen="../images/fresas.jpg">Fresas de Diamante - 15€</option>
+                    <option value="producto4" data-precio="885" data-imagen="../images/contraangulo.jpg">Contra Ángulo Dental 1:5 - 885€</option>
+                    <option value="producto5 " data-precio="307" data-imagen="../images/lampara.jpg">Lámpara LED Light Curing - 307€</option>
+                    <option value="producto6 " data-precio="827" data-imagen="../images/suction.jpg"> Sistema de Aspiración para Pared- 827€</option>
+                
+                </select>
+               
+                <p id="total-galeria">Total: 0€</p>
+                <img id="imagen-producto" src="../images/default-placeholder.jpg" alt="Producto seleccionado" style="width: 150px; height: auto; display: none; margin-bottom: 20px;">
+
+                <button type="submit">Agregar a presupuesto</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="../images/social_icons/facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="#"><img src="../images/social_icons/twitter.png" alt="Twitter" width="30" height="30"></a>
+            <a href="#"><img src="../images/social_icons/instagram.png" alt="Instagram" width="30" height="30"></a>
+        </div>
+        
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #9be890;">
+    <header>
+      
+        <nav>
+            <img src="../images/logo.png" alt="Logo" class="logo">
+            <ul>
+                
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+                <li class="search-container">
+                    <input type="text" id="search-box" placeholder="Buscar...">
+                    <button type="submit" id="search-btn">🔍</button>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Solicitud de Presupuesto</h1>
+        <form id="presupuesto-form">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required maxlength="15" pattern="[A-Za-z]+" title="Solo letras, máximo 15 caracteres">
+                
+                <label for="apellidos">   Apellidos:</label>
+                <input type="text" id="apellidos" required maxlength="40" pattern="[A-Za-z ]+" title="Solo letras, máximo 40 caracteres">
+                
+                <label for="telefono">   Teléfono:</label>
+                <input type="tel" id="telefono" required maxlength="9" pattern="\d{9}" title="Solo números, máximo 9 dígitos">
+                <p>                          </p>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <label for="producto">Producto:</label>
+                <select id="producto" required>
+                    <option value="" disabled selected>Selecciona un producto</option>
+                    <option value="producto1" data-precio="255">Escalador de dientes - 255€</option>
+                    <option value="producto2" data-precio="30">Kit de Exploración - 30€</option>
+                    <option value="producto3" data-precio="15">Fresas de Diamante - 15€</option>
+                    <option value="producto4" data-precio="885">Contra Ángulo Dental 1:5 - 885€</option>
+                    <option value="producto5" data-precio="307">Lámpara LED Light Curing - 307€</option>
+                    <option value="producto6" data-precio="827">Sistema de Aspiración para Pared - 827€</option>
+                </select>
+                
+            
+                
+              
+               
+                <label for="plazo">Plazo (días):</label>
+                <input type="number" id="plazo" min="1" value="1" required> <!-- Cambia type="button" -->
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label><input type="checkbox" class="extra" value="20"> Extra 1 (+$20)</label>
+                    <label><input type="checkbox" class="extra" value="30"> Extra 2 (+$30)</label>
+                    <label><input type="checkbox" class="extra" value="50"> Extra 3 (+$50)</label>
+                </fieldset>
+                <button type="button" id="añadir-producto">Añadir</button> <!-- Mueve el botón aquí -->
+                <h2>Productos Seleccionados</h2>
+                <div id="presupuesto-container"></div>
+                <p id="presupuesto-final">Presupuesto Total: $0</p>
+                <label>
+                    <input type="checkbox" id="aceptar" required>
+                    Acepto las condiciones de privacidad.
+                </label>
+                <button type="submit">Enviar Presupuesto</button>
+
+                <button type="reset" id="resetear-presupuesto">Resetear</button>
+                
+            </fieldset>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="../images/social_icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../images/social_icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="../images/social_icons/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+    
+
+</body>
+</html>
